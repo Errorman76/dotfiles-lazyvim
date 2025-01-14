@@ -8,6 +8,7 @@ return {
     opts = {
       adapters = {
         ["neotest-python"] = {
+          -- TODO:
           -- Here you can specify the settings for the adapter, i.e.
           -- runner = "pytest",
           -- python = ".venv/bin/python",
@@ -40,15 +41,6 @@ return {
     opts = {
       handlers = {
         python = function() end,
-      },
-    },
-  },
-  {
-    "stevearc/conform.nvim",
-    optional = true,
-    opts = {
-      formatters_by_ft = {
-        ["python"] = { "black" },
       },
     },
   },

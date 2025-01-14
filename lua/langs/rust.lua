@@ -15,7 +15,10 @@ return {
     optional = true,
     opts = {
       adapters = {
-        ["rustaceanvim.neotest"] = {},
+        ["rustaceanvim.neotest"] = {
+          -- TODO:
+          -- Here we can set options for rust
+        },
       },
     },
   },
