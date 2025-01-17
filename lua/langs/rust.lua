@@ -1,23 +1,12 @@
 return {
   {
-    "williamboman/mason.nvim",
-    optional = true,
-    opts = function(_, opts)
-      opts.ensure_installed = opts.ensure_installed or {}
-      vim.list_extend(opts.ensure_installed, { "codelldb" })
-      if diagnostics == "bacon-ls" then
-        vim.list_extend(opts.ensure_installed, { "bacon" })
-      end
-    end,
-  },
-  {
     "nvim-neotest/neotest",
     optional = true,
     opts = {
       adapters = {
         ["rustaceanvim.neotest"] = {
           -- TODO:
-          -- Here we can set options for rust
+          -- set options for test
         },
       },
     },

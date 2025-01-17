@@ -1,11 +1,19 @@
 return {
-  "ellisonleao/gruvbox.nvim",
-  priority = 1000,
-  config = function()
-    require("gruvbox").setup({
-      transparent_mode = true,
-    })
+  -- colorscheme catppuccin
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
+    opts = {
+      transparent_background = true,
+    },
+  },
 
-    vim.cmd("colorscheme gruvbox")
-  end,
+  -- configure LazyVim to load catppuccin
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "catppuccin",
+    },
+  },
 }

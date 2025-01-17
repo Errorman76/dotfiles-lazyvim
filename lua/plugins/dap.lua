@@ -1,6 +1,8 @@
 return {
-  "mfussenegger/nvim-dap",
-  keys = {
+  -- dap for debug in neovim
+  {
+    "mfussenegger/nvim-dap",
+    keys = {
     -- stylua: ignore start
     { "<F5>", function() require("dap").continue() end, desc = "continue" },
     { "<F17>", function() require("dap").terminate() end, desc = "terminate" },
@@ -11,6 +13,7 @@ return {
     { "<F10>", function() require("dap").step_over() end, desc = "step over" },
     { "<F11>", function() require("dap").step_into() end, desc = "step into" },
     { "<F23>", function() require("dap").step_out() end, desc = "step out" },
-    -- stylua: ignore end
+      -- stylua: ignore end
+    },
   },
 }
